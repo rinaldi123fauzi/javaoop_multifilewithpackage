@@ -3,6 +3,9 @@ package com.tutorial;
 //keyword import buat package eksternal
 import com.terminal.Console;
 
+//mengimport static method yg berada di package terpisah
+import static com.terminal.Console.log2;
+
 public class Main {
     public static void main(String[] args) {
         Player player1 = new Player("Otong");
@@ -11,5 +14,6 @@ public class Main {
         player2.show();
         Console.log("console hallo");
         Player.coba();
+        log2(player2.getName());
     }
 }

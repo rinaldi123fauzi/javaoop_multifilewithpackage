@@ -11,6 +11,10 @@ class Player{
         this.name = name;
     }
 
+    String getName(){
+        return this.name;
+    }
+
     void show(){
         System.out.println("Player name = " + this.name);
     }
