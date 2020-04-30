@@ -15,5 +15,16 @@ public class Main {
         Console.log("console hallo");
         Player.coba();
         log2(player2.getName());
+
+        //Overloading constructor
+        Player player3 = new Player();
+        player3.show();
+
+        //Overloading methods
+        int a = Matematika.tambah(1,19);
+        System.out.println(a);
+
+        double b = Matematika.tambah(1,0.5);
+        System.out.println(b);
     }
 }

@@ -2,9 +2,17 @@ package com.tutorial;
 
 class Player{
     private String name;
+    private static int jumlahPlayer;
 
     Player(String name){
+        Player.jumlahPlayer++;
         this.name = name;
+    }
+
+    //Overloading constructor
+    Player(){
+        Player.jumlahPlayer++;
+        this.name = "player" + Player.jumlahPlayer;
     }
 
     void setName(String name){
